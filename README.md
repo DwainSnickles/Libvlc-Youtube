@@ -1,7 +1,8 @@
 # Tutorial Libvlc videoview stream Youtube
-I spent a great deal of time trying to figure how to stream youtube video to libvlc sharp videoview.
+I spent a great deal of time trying to figure how to stream youtube video link to libvlcsharp videoview.
 Videoview itself works awesome for actual video files eg .mp4 and others including audio .mp3.
 But how can I stream a youtube link its not actually a video file eg https://youtu.be/lzm5llVmR2E
+
 This tutorial will show you how to do it.
 1) create a new winform project.
 2) Add the following nuget packages.
