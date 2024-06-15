@@ -5,7 +5,7 @@ But how can I stream a youtube link its not actually a video file eg https://you
 I do have a zip Libvlc.zip with the library required files but cant upload it because its too big 114mg if the code doesnt include them contact me and I will try to get them to you.
 
 This tutorial will show you how to do it.
-1) create a new winform project.
+1) Create a new winform project.
 2) Add the following nuget packages.
 3) 
    dotnet add package LibVLCSharp --version 3.8.5
