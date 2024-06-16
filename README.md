@@ -9,29 +9,34 @@ This tutorial will show you how to do it.
 2) Add the following nuget packages.
 3) 
    dotnet add package LibVLCSharp --version 3.8.5
+   
    https://www.nuget.org/packages/LibVLCSharp/3.8.5#show-readme-container
 
    dotnet add package LibVLCSharp.WinForms --version 3.8.5
+   
    https://www.nuget.org/packages/LibVLCSharp.WinForms/3.8.5#show-readme-container
    
    //this is used to parse the link to a stream and also get codec info if desired.
    dotnet add package YoutubeExplode --version 6.3.16
+   
    https://www.nuget.org/packages/YoutubeExplode
    
 5) Download the vlcfiles from here extract them to bin\Debug. eg ....bin\Debug\libvlc, these files are manditory to the success of the app. If you download the source here it should include them but please verify before continuing.
 6) Add videoView from toolbox under LibVLCSharp.Winforms normally at the very top of the toolbar.
 7) Open forms code in code view
-8) add the following using statements at the top                                          
+8) add the following using statements at the top
+ ```                                         
   using LibVLCSharp.Shared;
   using YoutubeExplode;
-  using YoutubeExplode.Videos.Streams;
-9) Under the InitializeComponent(); add the following code 
+  using YoutubeExplode.Videos.Streams; 
+  ```
+10) Under the InitializeComponent(); add the following code 
             //You must init libvlc core
             Core.Initialize();
            //the youtube link we are trying to stream
            //Dont worry about the red error we just need to create the method
            PlayYoutubeFile("https://youtu.be/lzm5llVmR2E");
-10) Create the asyncronis method to stream the youtube link.
+11) Create the asyncronis method to stream the youtube link.
     ```C#
     public async void PlayYoutubeFile(string videoUrl)
     {
